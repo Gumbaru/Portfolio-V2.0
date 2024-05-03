@@ -1,0 +1,184 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="Veille | De Bernardo Elias" description="Documentation de mes projets">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="Veille technologique"
+				tagline="Découvrez quelques uns des sujets auquel je m'interesse en ce moment !"
+			>
+			
+			</Hero>
+            <br>
+           
+
+			<section>
+
+				<h2 class="section-title">Sujet</h2>
+				<div class="content">
+					<p> <h3>ACE</h3> <br>
+						<img
+						width="75%"
+						src="/assets/robot_ace.png"
+						alt="Unreal engine5 "
+					/>
+					<br>
+					<a href="/assets/Avance-des-Interfaces-Personnalisees-grace-a-lIntelligence-Artificielle.pdf" target="_blank" class="button">Découvrir ACE</a>
+					
+					<br>
+				    <br>
+					<p><h4>Mes sources</h4> <br>
+						Pour effectuer mes recherches j'ai utilisée plusieurs outils :
+						<li>Google Alert</li>
+						<li>Recherche sur le site internet de nvidia</li>
+						<li>Blog abonné de Nvidia</li>
+					</p>
+
+					<br>
+
+				</section>	
+				<br>
+				<section>			
+				<h2 class="section-title">Sujet</h2>
+				<div class="content">
+					<p> <h3>Unreal engine 5</h3> <br>
+						<img
+						width="75%"
+						src="/assets/IMG_12.JPG"
+						alt="Unreal engine5 "
+					/>
+					<br>
+					<a href="/assets/Unreal-Engine-5-La-Nouvelle-Ere-des-Jeux-Video.pdf" target="_blank" class="button1">Découvrir Unreal5</a>
+					<br>
+
+				    <br>
+					<p><h4>Mes sources</h4> <br>
+						Pour effectuer mes recherches j'ai utilisée plusieurs outils :
+						<li>Google Alert</li>
+						<li>Inscription au blog de Unreal 5</li>
+						<li>Documentaire sur les jeux videos qui utilsents Unreal 5</li>
+					</p>
+			
+				
+			</Hero>
+		</section>
+		
+		<section>
+			
+				<h2 class="section-title">Sujet</h2>
+				<div class="content">
+					<p> <h3>Chat GPT pour les ingénieurs réseau</h3> <br>
+						<img
+						width="75%"
+						src="/assets/IMG_1213.JPG"
+						alt="Chat GPT"
+					/>
+					<br>
+					<a href="/assets/Exploiter-les-possibilites-du-ChatGPT-pour-les-ingenieurs-reseau.pdf" target="_blank" class="button1">Découvrir Chat GPT</a>
+					<br>
+					<br>
+					<p><h4>Mes sources</h4> <br>
+						Pour effectuer mes recherches j'ai utilisée ces outils ci-dessous :
+						<li>Reportage sur Chat GPT</li>
+						<li>Chat GPT</li>
+						<li>Google Alert</li>
+						<li>Wikipedia</li>
+					</p>
+				</div>
+			</section>
+		</main>
+						
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #19dd54, #075504);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+	.button:hover {
+		background-color: #0056b3;
+	}
+
+	.button1 {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #1d0eec, #dd06e8);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+	.button1:hover {
+		background-color: #0056b3;
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>

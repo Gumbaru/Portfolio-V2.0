@@ -1,0 +1,413 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="Veille | De Bernardo" description="Documentation de mes projets">
+    <div class="stack gap-20">
+        <main class="wrapper about">
+            <Hero
+                title="Documentations de mes projets"
+                tagline="Parcourez les différentes documentations de mes projets."
+            >
+            </Hero>
+            <br>
+
+<!-- Même modèle pour chaque cartes -->
+
+            <section class="card-container">
+                
+                <div class="card">
+                    <div class="content-container">
+                        <h2 class="section-title">AP4</h2>
+                        <img
+                            width="75%"
+                            src="/assets/omnibet.png"
+                            alt="Omnibet "
+                        />
+                        <br>
+                        <p>
+                            Application mobile de paris sportif, coder en flutter, Dart. Il permet de parier sur des matchs de foot, de volley et de basket. Il permet aussi de voir les matchs en direct et de voir les statistiques des équipes.
+                        </p>
+                    </div>
+                    <a href="/assets/Documentation-utilisation.pdf" class="btn">Voir la documentation</a>
+                </div>
+
+                <div class="card">
+                    <div class="content-container">
+                        <h2 class="section-title">AP3</h2>
+                        <img
+                            width="75%"
+                            src="/assets/omnimatch.png"
+                            alt="OmniMatch "
+                        />
+                        <br>
+                        <p>
+                            Application Web d'omnimatch réaliser pour la ligue M2L, coder en html, css et javascript. Il permet de voir le programme des matchs, les résultats des précédents matchs.Il contient également une interface admin pour gérer les comptes clients et les clubs.
+                        </p>
+                    </div>
+                    <a href="/assets/Documentation-utilisation.pdf" class="btn">Voir la documentation</a>
+                </div>
+
+                <div class="card">
+                    <div class="content-container">
+                        <h2 class="section-title">AP2</h2>
+                        <img
+                            width="75%"
+                            src="/assets/maison-ligue.jpeg"
+                            alt="M2L "
+                        />
+                        <br>
+                        <p>
+                            Proposition des solutions au problématique de la ligue M2L.
+                        </p>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1DCMcZacHuEG8_JJWVEHdgJw6ADo8kvna/view" class="btn">Voir la documentation</a>
+                </div>
+
+                <div class="card">
+                    <div class="content-container">
+                        <h2 class="section-title">AP1</h2>
+                        <img
+                            width="75%"
+                            src="/assets/SSR.jpg"
+                            alt="SSR PRO "
+                        />
+                        <br>
+                        <p>
+                            Création de l'entreprise fictive SSR PRO, réalisation d'un site vitrine, coder en html, css. Il permet de voir les différents services proposer par l'entreprise, de voir les réalisations et de contacter l'entreprise.
+                        </p>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1mD0YKSP_t7nVX7uOkKrx4vQXkAqnKJ6k/view" class="btn">Voir la documentation</a>
+                </div>
+
+                <div class="card">
+                    <div class="content-container">
+                        <h2 class="section-title">Pokedex</h2>
+                        <img
+                            width="75%"
+                            src="/assets/pokedex1.jpg"
+                            alt="Pokedex-gradient "
+                        />
+                        <br>
+                        <p>
+                            Pokedex réaliser avec la pokeapi, coder en html, css et javascript. Il repertori tout les pokemons de la 1er génération, affichant le type, la taille, le poids, les attaques et l'image du pokemon.
+                        </p>
+                    </div>
+                    <a href="https://pokedex-gradient.vercel.app/" class="btn">Voir le site</a>
+                </div>
+
+                <div class="card">
+                    <div class="content-container">
+                        <h2 class="section-title">GLPI</h2>
+                        <img
+                            width="75%"
+                            src="/assets/LogoGlpi.png"
+                            alt="GLPI "
+                        />
+                        <br>
+                        <p>
+                            Application de ticketing 
+                        </p>
+                    </div>
+                    <a href="/assets/Installer-et-Configurer-GLPI.pdf" class="btn">Voir la documentation</a>
+                </div>
+
+                <div class="card">
+                    <div class="content-container">
+                        <h2 class="section-title">Tests unitaires</h2>
+                        <img
+                            width="75%"
+                            src="/assets/test-unitaire.jpeg"
+                            alt="Tests unitaires"
+                        />
+                        <br>
+                        <p>
+                            Tests unitaires réaliser avec Jest et SuperTest. 
+                        </p>
+                    </div>
+                    <a href="/assets/tests-unitaires-documentation.pdf" class="btn">Voir la documentation</a>
+                </div>
+
+                <div class="card">
+                    <div class="content-container">
+                        <h2 class="section-title">Ubuntu</h2>
+                        <img
+                            width="75%"
+                            src="/assets/ubuntu.jpeg"
+                            alt="Ubuntu "
+                        />
+                        <br>
+                        <p>
+                            Mis en place d'un serveur Ubuntu avec un serveur web Apache et une base de donnée MySQL. 
+                        </p>
+                    </div>
+                    <a href="/assets/Déploiement-VM.pdf" class="btn">Voir la documentation</a>
+                </div>
+
+                <div class="card">
+                    <div class="content-container">
+                        <h2 class="section-title">Déploiement de service</h2>
+                        <img
+                            width="75%"
+                            src="/assets/service.jpg"
+                            alt="Python "
+                        />
+                        <br>
+                        <p>
+                            Déploiement d'un service.
+                        </p>
+                    </div>
+                    <a href="/assets/OA-Déploiement Serveur NodeJs et MariaDB-240424-073144.pdf" class="btn">Voir la documentation</a>
+                </div>
+
+                <div class="card">
+                    <div class="content-container">
+                        <h2 class="section-title">Inventaire</h2>
+                        <img
+                            width="75%"
+                            src="/assets/inventaire.png"
+                            alt="Python "
+                        />
+                        <br>
+                        <p>
+                            Réalisation d'un inventaire. 
+                        </p>
+                    </div>
+                    <a href="/assets/inventaire.pdf" class="btn">Voir la documentation</a>
+                </div>
+
+                <div class="card">
+                    <div class="content-container">
+                        <h2 class="section-title">Feedly</h2>
+                        <img
+                            width="75%"
+                            src="/assets/feedly.jpeg"
+                            alt="Feedly "
+                        />
+                        <br>
+                        <p>
+                            Mise en place d'outils de veille informationnels. 
+                        </p>
+                    </div>
+                    <a href="/assets/Documentat1-FEEDLY-240424-074645.pdf" class="btn">Voir la documentation</a>
+                </div>
+
+                <div class="card">
+                    <div class="content-container">
+                        <h2 class="section-title">Trello</h2>
+                        <img
+                            width="75%"
+                            src="/assets/trello.jpeg"
+                            alt="Trello "
+                        />
+                        <br>
+                        <p>
+                            Application organisationnelle. 
+                        </p>
+                    </div>
+                    <a href="/assets/Documentat1-TRELLO-240424-075754.pdf" class="btn">Voir la documentation</a>
+                </div>
+
+                <div class="card">
+                    <div class="content-container">
+                        <h2 class="section-title">Confluence</h2>
+                        <img
+                            width="75%"
+                            src="/assets/confluence.jpeg"
+                            alt="Confuence "
+                        />
+                        <br>
+                        <p>
+                            Application de documentation. 
+                        </p>
+                    </div>
+                    <a href="/assets/Documentation bts sio Mattéo Bailly.pdf" class="btn">Voir la documentation</a>
+                </div>
+
+                <div class="card">
+                    <div class="content-container">
+                        <h2 class="section-title">Asana</h2>
+                        <img
+                            width="75%"
+                            src="/assets/asana.jpeg"
+                            alt="Asana "
+                        />
+                        <br>
+                        <p>
+                            Application de gestion de projet. 
+                        </p>
+                    </div>
+                    <a href="/assets/Documentation-ASANA.pdf" class="btn">Voir la documentation</a>
+                </div>
+
+                <div class="card">
+                    <div class="content-container">
+                        <h2 class="section-title">Google actualités</h2>
+                        <img
+                            width="75%"
+                            src="/assets/google-news.jpeg"
+                            alt="Google actualités "
+                        />
+                        <br>
+                        <p>
+                            Application mobile de veille informationnelle. 
+                        </p>
+                    </div>
+                    <a href="/assets/Documentation-Google news.pdf" class="btn">Voir la documentation</a>
+                </div>
+
+                <div class="card">
+                    <div class="content-container">
+                        <h2 class="section-title">Python</h2>
+                        <img
+                            width="75%"
+                            src="/assets/python.jpeg"
+                            alt="Python "
+                        />
+                        <br>
+                        <p>
+                            Language de programmation. 
+                        </p>
+                    </div>
+                    <a href="https://www.python.org/doc/" class="btn">Voir la documentation</a>
+                </div>
+
+                <div class="card">
+                    <div class="content-container">
+                        <h2 class="section-title">Ansible</h2>
+                        <img
+                            width="75%"
+                            src="/assets/ansible.jpeg"
+                            alt="Ansible "
+                        />
+                        <br>
+                        <p>
+                            Language de programmation. 
+                        </p>
+                    </div>
+                    <a href="https://docs.ansible.com/ansible/latest/index.html" class="btn">Voir la documentation</a>
+                </div>
+
+                <div class="card">
+                    <div class="content-container">
+                        <h2 class="section-title">Git</h2>
+                        <img
+                            width="75%"
+                            src="/assets/gitlab.jpeg"
+                            alt="Git lab "
+                        />
+                        <br>
+                        <p>
+                            Application de gestion de version. 
+                        </p>
+                    </div>
+                    <a href="/assets/documentation-gitlab.pdf" class="btn">Voir la documentation</a>
+                </div>
+
+                <div class="card">
+                    <div class="content-container">
+                        <h2 class="section-title">Git-Kraken</h2>
+                        <img
+                            width="75%"
+                            src="/assets/gitkraken.jpeg"
+                            alt="Git Kraken "
+                        />
+                        <br>
+                        <p>
+                            Application de gestion de version. 
+                        </p>
+                    </div>
+                    <a href="/assets/Documentat1-Git Kraken.pdf" class="btn">Voir la documentation</a>
+                </div>
+
+                <div class="card">
+                    <div class="content-container">
+                        <h2 class="section-title">Postman</h2>
+                        <img
+                            width="75%"
+                            src="/assets/postman.jpeg"
+                            alt="Git Kraken "
+                        />
+                        <br>
+                        <p>
+                            Application de d'appel d'API. 
+                        </p>
+                    </div>
+                    <a href="" class="btn">Voir la documentation</a>
+                </div>
+
+            </section>
+
+            
+        </main>
+    </div>
+    <ContactCTA />
+        </main>
+    </div>
+</BaseLayout>
+
+
+<style>
+    .about {
+        display: flex;
+        flex-direction: column;
+        gap: 3.5rem;
+    }
+
+    .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    width: 50%;
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+}
+
+    .card .section-title {
+        font-size: var(--text-xl);
+        color: var(--gray-0);
+    }
+
+    .card p {
+        color: var(--gray-200);
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+        background-color: #0056b3;
+    }
+</style>

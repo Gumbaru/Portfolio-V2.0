@@ -1,0 +1,162 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="A propos de mon entreprise  | De Bernardo Elias" description="Tout savoir sur Framatome">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="A propos de mon entreprise"
+				
+				
+			>
+				
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Sujet</h2>
+				<div class="content">
+					<p> <h3>Mon Stage</h3> <br>
+						<img
+						width="75%"
+						src="/assets/IMG_7070.JPG"
+						alt="Mon stage"
+					/> <br>
+                    <br>
+			
+                    <h4>En développement</h4> <br>
+
+					Crétion d'un outil d'anlyse de risque basé sur la méthode EBIOS RM 2018 délivré par l'ANSSI, pour évaluer les risques liés à la sécurité des systèmes d'information dans le secteur du nucléaire. 
+					Cet outil permet de déterminer les risques potentiels, de les classer par ordre de priorité et de proposer des solutions pour les atténuer. 
+					Il est essentiel pour garantir la sécurité des données et des systèmes informatiques de l'entreprise. 
+									</p>
+					<br>
+						<br>
+					<p><h4>En cybersécurité</h4> <br>
+						J'ai eu l'opportunité d'apprendre sur la cybersécurité grâce à mon équipe spécialisé dans le domaine ce qui m'as donné envie de me spécialiser dans ce domaine.
+						J'ai pu mettre en pratique mes compétences en matière de sécurité informatique et de gestion des risques, tout en contribuant à renforcer la sécurité des systèmes d'information de l'entreprise.
+						De plus j'ai commencé à faire de l'Hardening sur un serveur Windows Server 2016. Et pour sécurisé les ordinateurs corp de la société.
+					</p>
+					<br> <br>
+					
+					 
+					<p> <h5>Les outils utilisés pendant mon stage</h5> <br>
+						<li>Excel</li>
+						<li>Gitlab</li>
+						<li>Github</li>
+						<li>Access</li>
+						<li>Visual Studio Code</li>	
+					</p>
+					
+				</div>
+			</section>
+			
+            <section>
+				<h2 class="section-title">Sujet</h2>
+				<div class="content">
+					<p> <h3>Mon alternance</h3> <br>
+						<img
+						width="75%"
+						src="/assets/687106.png"
+						alt="Mon stage"
+					/> <br>
+			
+                    <h4>Développement Logiciel</h4> <br>
+                     <br>
+
+                     Depuis le début de mon parcours au sein de Framatome, j'ai eu l'opportunité passionnante de contribuer activement à la création d'un outil d'analyse de risque au sein de l'entreprise. 
+                     Mes missions principales consistent à développer des modules suivants les atelier de la methode EBIOS visant à automatiser et simplifier une analyse de risque et diverses tâches essentielles au bon fonctionnement du Logiciel. 
+                     Cette responsabilité m'a permis de mettre en pratique mes compétences en programmation et en automatisation, tout en contribuant à accroître l'efficacité opérationnelle de l'équipe.
+					</p>
+					<br>
+						<br>
+					<p><h4>Hardening</h4> <br>
+						Une part importante de mon travail consiste également à utiliser Visual Studio pour coder et gérer des configurations de renforcement de la sécurité sur les équipements (PC Corp).
+                         Ce volet de mon expérience m'a confronté à des défis techniques stimulants tout en me permettant d'approfondir mes connaissances dans le domaine de la sécurité informatique et des technologies réseau.
+					</p>
+					<br> <br>
+                    <p><h4>Bénéfices</h4> <br>
+                    Au-delà des aspects techniques, mon expérience chez Framatome m'a également offert l'occasion d'évoluer au sein d'une équipe dynamique et collaborative.
+                    La culture d'entreprise axée sur l'innovation et le partage des connaissances m'a permis de m'intégrer rapidement et de collaborer efficacement avec mes collègues et manager.
+					
+					<br> <br>
+					<p> <h5>Les outils utilisés pendant mon alternance</h5> <br>
+						<li>Ansible</li>
+						<li>VS Code</li>
+						<li>Python</li>	
+						<li>Gitlab</li>
+						<li>Excel</li>
+						<li>Access</li>
+						<li>Windows Server 2016</li>
+						<li>VBA</li>
+						<li>VBE</li>
+					</p>
+					
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
