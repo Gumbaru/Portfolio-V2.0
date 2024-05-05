@@ -2,9 +2,9 @@
 title: AP4
 publishDate: 2023-06-17 00:00:00
 img: /assets/omnibet.png
-img_alt: Amundi
+img_alt: Framatome
 description: |
-  Stage de fin d'année au sein d'Amundi 
+  Stage de fin d'année au sein de Framatome
 tags:
   - Réseau
   - Dev

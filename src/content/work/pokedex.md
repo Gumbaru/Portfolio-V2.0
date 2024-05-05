@@ -3,7 +3,7 @@ title: Pokédex
 stylesheet: /src/global.css
 publishDate: 0000-00-00 00:00:00
 img: /assets/pokedex1.jpg
-img_alt: Amundi
+img_alt: Framatome
 description: |
   Pokédex Gradient 
 tags:
